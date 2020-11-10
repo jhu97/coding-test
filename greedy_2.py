@@ -5,15 +5,14 @@ N, M, K = map(int, input().split())
 numbers = list(map(int, input().split()))
 
 numbers.sort()
-first = max(numbers)
+first = numbers[-1]
 second = numbers[-2]
+
 total = 0
 
-if numbers.count(first) > 1:
-    total = first * M
+count = (M // (K + 1)) * K + M % (K + 1)
 
-else:
-    total += K * first * (M // K)
-    total += (M % K) * second
+total += count * first
+total += (M - count) * second
 
 print(total)
