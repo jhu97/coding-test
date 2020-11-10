@@ -2,10 +2,10 @@ import sys
 input = sys.stdin.readline
 
 N, M = map(int, input().split())
-minimum = []
+minimum = 0
 
 for i in range(N):
     data = list(map(int, input().split()))
-    minimum.append(min(data))
+    minimum = max(minimum, min(data))
 
-print(max(minimum))
+print(minimum)
