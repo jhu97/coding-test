@@ -2,15 +2,16 @@ import sys
 input = sys.stdin.readline
 
 N, K = map(int, input().split())
-i = 0
+count = 0
 
 while True:
-    if N % K == 0:
-        N = N // K
-    else:
-        N -= 1
-    i += 1
-    if N == 1:
+    target = (N // K) * K
+    count += (N - target)
+    N = target
+    if N < K:
         break
+    count += 1
+    N //= K
 
-print(i)
+count += (N - 1)
+print(count)
