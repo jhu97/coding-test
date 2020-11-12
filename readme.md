@@ -3,3 +3,4 @@
 - [greedy_2.py](https://github.com/jhu97/coding-test/blob/main/greedy_2.py)
 - [greedy_3.py](https://github.com/jhu97/coding-test/blob/main/greedy_3.py)
 - [greedy_4.py](https://github.com/jhu97/coding-test/blob/main/greedy_4.py)
+- [implementation_1.py](https://github.com/jhu97/coding-test/blob/main/implementation_1.py)
