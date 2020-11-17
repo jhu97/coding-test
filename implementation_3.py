@@ -2,8 +2,8 @@ import sys
 input = sys.stdin.readline
 
 knight = input()
-horizontal_axis = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-vertical_axis = ['1', '2', '3', '4', '5', '6', '7', '8']
+horizontal_axis = list(map(chr, range(ord('a'), ord('h') + 1)))
+vertical_axis = [str(i) for i in range(1, 9)]
 steps = [[-2, -1], [-1, -2], [1, -2], [2, -1], [-2, 1], [-1, 2], [1, 2], [2, 1]]
 
 x = horizontal_axis.index(knight[0])
